@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Del Dicho al Mito - Entrevista</title>
+  <style>
+    /* Reset y estilos base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Verdana', sans-serif; background: #2e4053; color: #fdfefe; }
+
+    /* Header fijo y navegación */
+    header {
+      background: #1c2833;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    header .logo { font-size: 2.5em; color: #16a085; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    nav ul li a {
+      color: #fdfefe;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover { color: #16a085; }
+
+    /* Contenedor principal centralizado */
+    .container {
+      max-width: 1200px;
+      margin: 120px auto 40px auto; /* Se aumenta el margen superior a 120px */
+      padding: 0 20px;
+    }
+    h2 { color: #16a085; text-align: center; margin-bottom: 20px; }
+    p.center { text-align: center; margin-bottom: 30px; }
+
+    /* Tarjetas de publicaciones */
+    .forum-posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .forum-post {
+      background: #1c2833;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .forum-post:hover { transform: translateY(-5px); }
+    .forum-post h3 { color: #16a085; margin-bottom: 10px; }
+    /* Aquí se ajusta el interlineado de los párrafos al estilo APA */
+    .forum-post p {
+      margin-bottom: 10px;
+      line-height: 2; /* Doble interlineado */
+    }
+    .forum-post img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+
+    /* Sección para subir contenido */
+    .upload-section {
+      margin-top: 40px;
+      background: #1c2833;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .upload-section h3 { 
+      color: #16a085; 
+      margin-bottom: 10px; 
+      text-align: center; 
+    }
+    .upload-section form {
+      display: flex;
+      flex-direction: column;
+    }
+    .upload-section label { margin: 10px 0 5px; }
+    .upload-section input,
+    .upload-section textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+    .upload-section button {
+      padding: 10px;
+      background: #16a085;
+      color: #fdfefe;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-size: 1em;
+    }
+    .upload-section button:hover { background: #138d76; }
+
+    /* Footer */
+    footer {
+      background: #1c2833;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Ajustes responsivos para dispositivos pequeños */
+    @media (max-width: 600px) {
+      header .logo { font-size: 1.8em; }
+      nav ul li a { font-size: 0.9em; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header y navegación -->
+  <header>
+    <div class="logo">Del Dicho al Mito</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="foro.html">Foro</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="entrevista.html">Entrevista</a></li>
+        <li><a href="Escritura Digital.html">Escritura Digital</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenedor principal -->
+  <div class="container">
+    <h2>Entrevista</h2>
+    
+    
+    <!-- Sección de publicaciones -->
+      <div class="forum-posts">
+        <div class="forum-post">
+          <h3>Entrevista monólogo sobre la evolución de la escritura</h3>
+
+          <p>
+            <img src="interview.png" alt="Imagen de publicación">
+            <b>Entrevistador: </b>¿Cómo ha sido su transición de escritura tradicional a escritura digital? <br><br>
+          
+            <b>Juan Guillermo: </b>Diría que ha sido un proceso gradual, en Latinoamérica y particularmente en Colombia hemos sido una tierra llena de personas con ricos relatos, novelas, poemas; aprendemos a escribir y creo que la gran mayoría de las personas escribió algún cuento para amigos o familiares. Solíamos enviarnos cartas o hacer tareas en cuadernos con renglones; yo, particularmente, escribí historias inocentes, para mí mismo, luego dejé de hacerlo con gusto y se convirtió en una actividad más escolar, una escritura pensada para ser revisada y juzgada por un público, diferente de los cuentos que escribía en cuadernos viejos o en la parte trasera de los cuadernos que usaba para las asignaturas. Creo que mi relación con la escritura digital va ligada al momento en que me creé un perfil de Facebook y empecé a chatear con amigos, hacer publicaciones de diez palabras para contar un chiste, cosas así. Más adelante, en séptimo se volvió un hábito porque decidí pasarme a un colegio más exigente y, allá, desde el primer periodo todos teníamos que usar aplicaciones ofimáticas para hacer escritos, diapositivas, informes de lecturas, bitácoras. En el colegio se nos insistió mucho en usar la mayor parte del tiempo herramientas digitales, y bueno, aquí estamos. <br><br>
+            
+            <b>Entrevistador: </b>Muchas gracias, es curioso ver que casi todos los procesos de índole comunicativa y educativa se dan a través del ocio, del juego. Siguiente pregunta: ¿Qué elementos fundamentales considera que diferencian la escritura tradicional de la escritura digital? <br><br>
+            
+            <b>Juan Guillermo: </b>Pues para mí fue esencial el hecho de que ya podía tener un corrector y no tenía que esperar a que me revisaran el trabajo y me marcaran todas las faltas ortográficas que cometía por inexperiencia o distracción. Contrario a lo que pudieron llegar a pensar algunos adultos a mi alrededor, al usar el corrector con frecuencia mejoré mi redacción, fue un proceso más ágil y, pues, me dolía menos la muñeca. Eso sí, pienso que todo aquello que involucre la aceleración de un proceso implica que también se pierdan detalles; considero que la retención es menor al escribir de forma digital, y tiene mucho sentido porque, al escribir con la mano, tenemos que llevar a cabo procesos motrices finos que activan otras partes del cerebro y crean mayor cantidad de <a href="https://www.academia.edu/51141058/La_vida_secreta_de_la_mente" target="_blank">caminos sinápticos</a> que favorecen evocar estados mentales previos. Esos dirían que son las principales diferencias. <br><br>
+            
+            <b>Entrevistador: </b>Claro, y tiene mucho sentido; el acceder a correcciones en todo momento nos permite interactuar y familiarizarnos con los significantes, contenidos y los fenómenos. ¿Considera que la academia prepara a los estudiantes para enfrentarse a la escritura digital? ¿Por qué? <br><br>
+            
+            <b>Juan Guillermo: </b>Sí, claro, al menos en mi experiencia se me pedía que usara formato APA para casi todas las entregas; ese formato es exclusivo de la escritura digital. Por fortuna, no tuve que escribir planas en Mecanet. <br><br>
+            
+            <b>Entrevistador: </b>Entonces, ¿considera que la escritura tradicional está por desaparecer? ¿Por qué? <br><br>
+            
+            <b>Juan Guillermo: </b>No lo creo, aún hay varios grados de <a href="https://www.unesco.org/es/literacy/need-know#:~:text=de%20la%20Alfabetizaci%C3%B3n?-,%C2%BFCu%C3%A1l%20es%20la%20situaci%C3%B3n%20de%20la%20alfabetizaci%C3%B3n%20en%20el%20mundo,los%20niveles%20m%C3%ADnimos%20de%20lectura." target="_blank">analfabetismo en el mundo</a>, y para bien o para mal hay personas que, por actos de nostalgia y romanticismo, aún escriben en papel; yo, por ejemplo, aún tengo un diario, como una forma de preservar mi privacidad en algún lugar del universo.
+          </p>
+          
+          <h3>Referencias</h3> <br>
+          <ul>
+            <li>Godoy, L. (2020). <i>Escritura digital y colaborativa: una práctica discursiva multifacética. Estado del arte y perspectivas para el futuro</i>. Quintú Quimün, 4, 1-20.</li> <br>
+            <li>Breton, P. (2014). <i>La argumentación en la comunicación</i> (pp. 57-73). Editorial UOC.</li> <br>
+            <li>Sigman, M. (2016) <i>La vida secreta de la mente. Santiago, Chile: Penguin Random House Grupo Editorial. 
+            </i>  <br> <br>
+            <li>UNESCO. (2025). ¿Cuál es la situación de la alfabetización en el mundo?. Recuperado de <a href="https://www.unesco.org/es/literacy/need-know#:~:text=de%20la%20Alfabetizaci%C3%B3n?-,%C2%BFCuál%20es%20la%20situación%20de%20la%20alfabetizaci%C3%B3n%20en%20el%20mundo,-%3F">UNESCO</a>
+            </li>
+          </ul>
+          
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Del Dicho al Mito. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

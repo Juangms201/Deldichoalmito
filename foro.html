@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Del Dicho al Mito - Foro</title>
+  <style>
+    /* Reset y estilos base */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Verdana', sans-serif; background: #2e4053; color: #fdfefe; }
+
+    /* Header fijo y navegación */
+    header {
+      background: #1c2833;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    header .logo { font-size: 2.5em; color: #16a085; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    nav ul li a {
+      color: #fdfefe;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover { color: #16a085; }
+
+    /* Contenedor principal centralizado */
+    .container {
+      max-width: 1200px;
+      margin: 120px auto 40px auto; /* Se aumenta el margen superior a 120px */
+      padding: 0 20px;
+    }
+    h2 { color: #16a085; text-align: center; margin-bottom: 20px; }
+    p.center { text-align: center; margin-bottom: 30px; }
+
+    /* Tarjetas de publicaciones */
+    .forum-posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .forum-post {
+      background: #1c2833;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .forum-post:hover { transform: translateY(-5px); }
+    .forum-post h3 { color: #16a085; margin-bottom: 10px; }
+    /* Aquí se ajusta el interlineado de los párrafos al estilo APA */
+    .forum-post p {
+      margin-bottom: 10px;
+      line-height: 2; /* Doble interlineado */
+    }
+    .forum-post img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+
+    /* Sección para subir contenido */
+    .upload-section {
+      margin-top: 40px;
+      background: #1c2833;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .upload-section h3 { 
+      color: #16a085; 
+      margin-bottom: 10px; 
+      text-align: center; 
+    }
+    .upload-section form {
+      display: flex;
+      flex-direction: column;
+    }
+    .upload-section label { margin: 10px 0 5px; }
+    .upload-section input,
+    .upload-section textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      font-size: 1em;
+    }
+    .upload-section button {
+      padding: 10px;
+      background: #16a085;
+      color: #fdfefe;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-size: 1em;
+    }
+    .upload-section button:hover { background: #138d76; }
+
+    /* Footer */
+    footer {
+      background: #1c2833;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Ajustes responsivos para dispositivos pequeños */
+    @media (max-width: 600px) {
+      header .logo { font-size: 1.8em; }
+      nav ul li a { font-size: 0.9em; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header y navegación -->
+  <header>
+    <div class="logo">Del Dicho al Mito</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="foro.html">Foro</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="entrevista.html">Entrevista</a></li>
+        <li><a href="Escritura Digital.html">Escritura Digital</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenedor principal -->
+  <div class="container">
+    <h2>Foro Cultural</h2>
+    <p class="center">Comparte tus experiencias, imágenes y relatos que inspiren la tradición y la cultura.</p>
+    
+    <!-- Sección de publicaciones -->
+      <div class="forum-posts">
+        <div class="forum-post">
+          <h3>El mito del "Yo"</h3>
+
+          <p>
+            <img src="yope.JPG" alt="Imagen de publicación">
+            Soy alguien muy curioso, resiliente, y creativo. A lo largo de mi vida, he aprendido a adaptarme a los cambios,
+             a buscar siempre más allá y a canalizar mi energía hacia mi bienestar y el de mi familia. Las circunstancias me han dado un camino, por el que he aprendido 
+             a navegar de la mejor manera posible. Entre todo aquello que ha sido parte de mi crecimiento, la lectura ha ocupado un lugar especial,
+             moldeando mi forma de ver el mundo y dándome claridad en los momentos más difíciles.</p>
+          <p>Recuerdo con claridad mis primeros juegos con otros niños, mis primeras pinturas que reflejaban mi forma de ver el mundo y el esfuerzo constante de mi mamá por darme todo lo esencial, aunque muchas veces fue difícil. A los seis años, empecé a estar mucho más tiempo solo en casa, lo que me permitió desarrollar una independencia temprana. Sin embargo, también me dio una mezcla de soledad y reflexión que marcaría mi carácter. No tengo demasiados recuerdos de mi infancia más temprana, pero hay uno que guardo con especial cariño: estoy recostado sobre mi madre en la cama mientras ella me lee un libro.
+             Eran historias clásicas, como las que veía en la televisión, pero en su voz sonaban diferentes. Había un realismo distinto, una calidez especial en su manera de narrarlas. 
+             Tal vez porque lo hacía justo antes de dormir, o quizás vez porque su voz las hacía aún más bellas. <br> <br>
+             Conforme fui creciendo, esa actividad desapareció de nuestra rutina, pero la lectura no. Llegaron los primeros textos escolares y, aunque mi mamá nunca tuvo dinero para comprarme —o quizás nunca le pareció importante— un cuadernillo para aprender a leer, se sentaba conmigo
+              con paciencia. Leíamos juntos fragmentos de cuentos, titulares de periódicos, cualquier cosa que estuviera a nuestro alcance, con tal de que yo pudiera mejorar. <br> <br>
+              Entre los 14 y los 17, me desconecté por completo de los libros. No fue algo planeado, simplemente la música ocupó todo mi espacio mental y emocional. El rock, el punk, el pop 
+              y el synth se convirtieron en el reflejo de mis cambios internos, en la forma en que procesaba el mundo. Mis días estaban marcados por sonidos y letras, por emociones intensas
+               que resonaban con mis pensamientos. <br> <br>
+
+              Finalmente, a los 17 años, algo cambió. La filosofía llegó a mi vida, y con ella, el libro que me devolvió a la lectura: Así habló Zaratustra. 
+              Recuerdo que mi profesor de filosofía no quería que lo leyera, y eso solo aumentó mi curiosidad. Fue un libro que, sin duda, me impactó y marcó mi manera de pensar. 
+              A partir de ese momento, la lectura volvió a ser una parte esencial de mi vida, ya no solo como un hábito, 
+              sino como una herramienta para comprender el mundo y a mí mismo. <br> <br>
+
+              Actualmente leo indiscriminadamente en PDF o en libros, pero la experiencia de palpar las hojas me es más familiar y significativa. <br> <br>
+            
+            </p>
+             <h3>Oye mi historia... </h3> <br>
+            
+             <audio controls src="audio biografia.wav"></audio> <br> <br> 
+             Video pendiente. Mientras, puedes recorrer mis redes sociales para conocerme un poco mejor en la sección "Nosotros". 
+            
+        </div>
+      <div class="forum-post">
+        <h3>Frases Curiosas</h3>
+        <p>Durante mi recorrido por la lectura, que ha sido más breve de lo que desearía, me he topado con escritores que me han marcado profundamente. Les dejo algunas citas que espero disfruten tanto como yo.<br><br>
+          <img src="niet.jpg" alt="Imagen de publicación"> 
+          Nietzsche (1883) menciona que "El espíritu libre pisa sobre las convicciones; pero el hombre vulgar es esclavo de ellas" (p. XX).<br><br>
+          <img src="spinoza.jpg" alt="Imagen de publicación">
+           Spinoza (1677) afirma que "una inteligencia que sea de hecho finita o de hecho infinita, debe comprender los atributos de Dios y las modificaciones de Dios, y no otra cosa" (p. XX).<br><br>
+           <img src="borges.jpg" alt="Imagen de publicación">
+           Borges (1985) expresa que "una persona que esté enamorada vea a la otra como Dios la ve, es decir, la ve del mejor modo posible" (En diálogo, I, 16).
+        </p><br>
+        <br><br><br>
+        <h3>Referencias</h3> <br>
+        <p>1. Wilhelm, F. (2018). <em>Así hablaba Zaratustra</em> (1.ª ed.). Grupo editorial: Editorial Universidad de Guadalajara. Publicado en asociación con: Programa Universitario de Fomento a la Lectura Letras para Volar.<br><br>
+           2. Spinoza, Baruch (1980). <em>Ética demostrada según el orden geométrico</em> (Vidal Peña, trad.).<br><br>
+           3. Borges, J. L. (2017, 19 de febrero). <em>Osvaldo Ferrari: Sobre el amor (1984)</em>. Borges Todo el Año. <a href="https://borgestodoelanio.blogspot.com/2017/02/jorge-luis-borges-osvaldo-ferrari-sobre.html"></a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Sección para subir contenido -->
+    <div class="upload-section">
+      <h3>Sube tu contenido</h3>
+      <form id="uploadForm">
+        <label for="uploadTitle">Título:</label>
+        <input type="text" id="uploadTitle" name="uploadTitle" placeholder="Título de la publicación" required>
+        <label for="uploadContent">Contenido:</label>
+        <textarea id="uploadContent" name="uploadContent" rows="4" placeholder="Escribe tu relato o comentario..." required></textarea>
+        <label for="uploadFile">Subir Imagen/Video:</label>
+        <input type="file" id="uploadFile" name="uploadFile" accept="image/*,video/*">
+        <button type="submit">Enviar Publicación</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Del Dicho al Mito. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Simulación del envío de contenido
+    document.getElementById('uploadForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Tu contenido ha sido enviado para revisión.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>

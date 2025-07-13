@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Del Dicho al Mito - Inicio</title>
+  <style>
+    /* Reset básico */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: 'Arial', sans-serif; 
+      color: #fff; 
+      background: #1a1a1a; 
+    }
+    /* Fondo del body */
+    body::before { 
+      content: "";
+      background: url('waves.gif') no-repeat center center/cover;
+      opacity: 0.8;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    /* Header fijo y transparente */
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    header .logo { 
+      font-size: 2em; 
+      font-weight: bold; 
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover { color: #f39c12; }
+    /* Sección Hero */
+    .hero {
+      height: 100vh;
+      background: url('assets/img/hero-inicio.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      text-align: center;
+      z-index: 1;
+    }
+    .hero-content h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: fadeIn 2s;
+    }
+    .hero-content p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      animation: fadeIn 2.5s;
+    }
+    .hero-content button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background: #16a085;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .hero-content button:hover { background: #16a085; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    /* Footer */
+    footer { 
+      background: #000; 
+      text-align: center; 
+      padding: 15px; 
+    }
+    /* Efecto Reflectivo para el Título */
+    .reflective {
+      background: linear-gradient(90deg, #ffffff, #73fdfd8c, #00ffd5c5, #00000007);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: reflect 5s linear infinite;
+      -webkit-box-reflect: below 0px linear-gradient(transparent, rgba(255,255,255,0.3));
+    }
+    @keyframes reflect {
+      0% { background-position: 200% center; }
+      100% { background-position: -200% center; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header y navegación -->
+  <header>
+    <!-- Se ha agregado la clase "reflective" para aplicar el efecto -->
+    <div class="logo reflective">Del Dicho al Mito</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="foro.html">Foro</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="entrevista.html">Entrevista</a></li>
+        <li><a href="Escritura Digital.html">Escritura Digital</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sección Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenidos a "Del Dicho al Mito"</h1>
+      <p>Descubre el relato detrás de cada tradición y la esencia de lo cultural.</p>
+      <button onclick="window.location.href='nosotros.html'">Conoce Más</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Del Dicho al Mito. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

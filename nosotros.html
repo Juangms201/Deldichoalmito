@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Del Dicho al Mito - Nosotros</title>
+  <style>
+    /* Reset básico */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: 'Georgia', serif; 
+      background: #f4f4f4; 
+      color: #333; 
+    }
+    /* Header */
+    header {
+      background: #333;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    header .logo { 
+      font-size: 2.5em; 
+      color: #16a085; 
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+    nav ul li a { 
+      color: #fff; 
+      text-decoration: none; 
+      font-size: 1.1em; 
+      transition: color 0.3s; 
+    }
+    nav ul li a:hover { color: #f39c12; }
+    /* Contenedor principal */
+    .content {
+      margin-top: 100px; /* Espacio para el header fijo */
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+    }
+    /* Contenedor para la información (texto e imagen) */
+    .info-container {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    /* En escritorio: imagen a la izquierda, texto a la derecha */
+    .info-container .image-section {
+      order: 1;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .info-container .image-section img {
+      max-width: 100%;
+      height: auto;
+      /* Bordes semicirculares en el lado izquierdo */
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .info-container .text-section {
+      order: 2;
+      flex: 1;
+      padding: 60px;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .text-section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .text-section p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    /* Sección de redes sociales: se usan iconos en lugar de botones */
+    .social-buttons {
+      text-align: center;
+    }
+    .social-buttons a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .social-buttons a img {
+      width: 40px;
+      height: 40px;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    /* Estilos responsivos para móviles */
+    @media (max-width: 768px) {
+      /* Aumenta el espacio superior para evitar que el header tape el contenido */
+      .content {
+        margin-top: 140px;
+      }
+      .info-container {
+        flex-direction: column;
+      }
+      /* Reordena: primero el texto, luego la imagen */
+      .info-container .text-section {
+        order: 1;
+        padding: 20px;
+      }
+      .info-container .image-section {
+        order: 2;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header y navegación -->
+  <header>
+    <div class="logo">Del Dicho al Mito</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="foro.html">Foro</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="entrevista.html">Entrevista</a></li>
+        <li><a href="Escritura Digital.html">Escritura Digital</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <!-- Contenido principal -->
+  <div class="content">
+    <!-- Contenedor para el texto e imagen -->
+    <div class="info-container">
+      <div class="text-section">
+        <h2>Sobre Nosotros</h2>
+        <p>
+          En <strong>Del Dicho al Mito</strong> exploramos la riqueza de las tradiciones y la diversidad cultural, transformando relatos en experiencias únicas.
+        </p>
+        <p>
+          Aquí residen los apasionados por la cultura y la narrativa, conectemos generaciones a través de historias que inspiren y eduquen.
+        </p>
+      </div>
+      <div class="image-section">
+        <img src="ffff.JPG" alt="Imagen representativa">
+      </div>
+    </div>
+    <!-- Sección de redes sociales con iconos -->
+    <div class="social-buttons">
+      <a href="https://www.youtube.com/@Guillo_404" target="_blank">
+        <img src="youtube.png" alt="YouTube">
+      </a>
+      <a href="https://www.instagram.com/guillo_404/" target="_blank">
+        <img src="instagram.png" alt="Instagram">
+      </a>
+      <a href="mailto:j2920216@gmail.com">
+        <img src="mail.webp" alt="Correo">
+      </a>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Del Dicho al Mito. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
